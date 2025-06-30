@@ -5,17 +5,30 @@
   <title>Happy Birthday Emma</title>
   <style>
     body {
-      background-color: #ffecf0;
+      /* background-color: #ffecf0; */
+      background-color: #b1cffd;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: ui-rounded;
     }
     .message {
       font-size: 2em;
-      color: #ff1493;
+      color: white;
       animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+    .photos {
+        display: grid;
+        row-gap: 20px;
+    }
+    img{
+        border: 10px solid white;
+        border-radius: 20px;
+        width: 200px;      /* Set a fixed size */
+        height: 200px;     /* Set a fixed size */
+        object-fit: cover; /* This crops the image to fill the box */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     @keyframes fadeIn {
       from { opacity: 0.2; transform: scale(0.95);}
@@ -24,6 +37,20 @@
   </style>
 </head>
 <body>
-  <div class="message">🎉 Happy Birthday Emma from Daria 🎈</div>
+      <div class="photos">
+        <img src="emma2.jpg" alt="Emma">
+        <img src="emma3.jpg" alt="Emma">
+    </div>
+  <div class="message">
+    <p>🎉 Joyeux Anniversaire ma belle 🎉</p>
+ </div>
+     <div class="photos">
+        <img src="emma.png" alt="Emma">
+        <img src="emma1.jpg" alt="Emma">
+    </div>
+  <!-- <img src="emma.png" alt="Emma">
+  <img src="emma1.jpg" alt="Emma">
+  <img src="emma2.jpg" alt="Emma">
+  <img src="emma3.jpg" alt="Emma"> -->
 </body>
 </html>
